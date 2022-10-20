@@ -1,0 +1,109 @@
+3.	inputs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+weights1 = [0.2, 0.4, 0.6, 0.8, 0.3, 0.5, 0.7, 0.1, 0.9, 0.1]
+weights2 = [0.1, 0.2, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.1]
+weights3 = [0.9, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.6, 0.7, 0.8]
+weights4 = [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]
+weights5 = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+weights6 = [0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3]
+bias1 = 5
+bias2 = 3
+bias3 = 2
+bias4 = 1
+bias5 = 4
+outputs = [
+# Neuron 1
+   (inputs[0]*weights1[0] + inputs[1]*weights1[1] + inputs[2]*weights1[2] + inputs[3]*weights1[3] +
+         inputs[4]*weights1[4] + inputs[5]*weights1[5] + inputs[6]*weights1[6] + inputs[7]*weights1[7] +
+         inputs[8]*weights1[8] + inputs[9]*weights1[9] + bias1),
+         (inputs[0]*weights2[0] + inputs[1]*weights2[1] + inputs[2]*weights2[2] + inputs[3]*weights2[3] +
+         inputs[4]*weights2[4] + inputs[5]*weights2[5] + inputs[6]*weights2[6] + inputs[7]*weights2[7] +
+         inputs[8]*weights2[8] + inputs[9]*weights2[9] + bias1),
+         (inputs[0]*weights3[0] + inputs[1]*weights3[1] + inputs[2]*weights3[2] + inputs[3]*weights3[3] +
+         inputs[4]*weights3[4] + inputs[5]*weights3[5] + inputs[6]*weights3[6] + inputs[7]*weights3[7] +
+         inputs[8]*weights3[8] + inputs[9]*weights3[9] + bias1),
+         (inputs[0]*weights4[0] + inputs[1]*weights4[1] + inputs[2]*weights4[2] + inputs[3]*weights4[3] +
+         inputs[4]*weights4[4] + inputs[5]*weights4[5] + inputs[6]*weights4[6] + inputs[7]*weights4[7] +
+         inputs[8]*weights4[8] + inputs[9]*weights4[9] + bias1),
+         (inputs[0]*weights5[0] + inputs[1]*weights5[1] + inputs[2]*weights5[2] + inputs[3]*weights5[3] +
+         inputs[4]*weights5[4] + inputs[5]*weights5[5] + inputs[6]*weights5[6] + inputs[7]*weights5[7] +
+         inputs[8]*weights5[8] + inputs[9]*weights5[9] + bias1),
+         (inputs[0]*weights6[0] + inputs[1]*weights6[1] + inputs[2]*weights6[2] + inputs[3]*weights6[3] +
+         inputs[4]*weights6[4] + inputs[5]*weights6[5] + inputs[6]*weights6[6] + inputs[7]*weights6[7] +
+         inputs[8]*weights6[8] + inputs[9]*weights6[9] + bias1),
+# Neuron 2 :
+   (inputs[0]*weights1[0] + inputs[1]*weights1[1] + inputs[2]*weights1[2] + inputs[3]*weights1[3] +
+         inputs[4]*weights1[4] + inputs[5]*weights1[5] + inputs[6]*weights1[6] + inputs[7]*weights1[7] +
+         inputs[8]*weights1[8] + inputs[9]*weights1[9] + bias2),
+         (inputs[0]*weights2[0] + inputs[1]*weights2[1] + inputs[2]*weights2[2] + inputs[3]*weights2[3] +
+         inputs[4]*weights2[4] + inputs[5]*weights2[5] + inputs[6]*weights2[6] + inputs[7]*weights2[7] +
+         inputs[8]*weights2[8] + inputs[9]*weights2[9] + bias2),
+         (inputs[0]*weights3[0] + inputs[1]*weights3[1] + inputs[2]*weights3[2] + inputs[3]*weights3[3] +
+         inputs[4]*weights3[4] + inputs[5]*weights3[5] + inputs[6]*weights3[6] + inputs[7]*weights3[7] +
+         inputs[8]*weights3[8] + inputs[9]*weights3[9] + bias2),
+         (inputs[0]*weights4[0] + inputs[1]*weights4[1] + inputs[2]*weights4[2] + inputs[3]*weights4[3] +
+         inputs[4]*weights4[4] + inputs[5]*weights4[5] + inputs[6]*weights4[6] + inputs[7]*weights4[7] +
+         inputs[8]*weights4[8] + inputs[9]*weights4[9] + bias2),
+         (inputs[0]*weights5[0] + inputs[1]*weights5[1] + inputs[2]*weights5[2] + inputs[3]*weights5[3] +
+         inputs[4]*weights5[4] + inputs[5]*weights5[5] + inputs[6]*weights5[6] + inputs[7]*weights5[7] +
+         inputs[8]*weights5[8] + inputs[9]*weights5[9] + bias2),
+         (inputs[0]*weights6[0] + inputs[1]*weights6[1] + inputs[2]*weights6[2] + inputs[3]*weights6[3] +
+         inputs[4]*weights6[4] + inputs[5]*weights6[5] + inputs[6]*weights6[6] + inputs[7]*weights6[7] +
+         inputs[8]*weights6[8] + inputs[9]*weights6[9] + bias2),
+# Neuron 3 :
+   (inputs[0]*weights1[0] + inputs[1]*weights1[1] + inputs[2]*weights1[2] + inputs[3]*weights1[3] +
+         inputs[4]*weights1[4] + inputs[5]*weights1[5] + inputs[6]*weights1[6] + inputs[7]*weights1[7] +
+         inputs[8]*weights1[8] + inputs[9]*weights1[9] + bias3),
+         (inputs[0]*weights2[0] + inputs[1]*weights2[1] + inputs[2]*weights2[2] + inputs[3]*weights2[3] +
+         inputs[4]*weights2[4] + inputs[5]*weights2[5] + inputs[6]*weights2[6] + inputs[7]*weights2[7] +
+         inputs[8]*weights2[8] + inputs[9]*weights2[9] + bias3),
+         (inputs[0]*weights3[0] + inputs[1]*weights3[1] + inputs[2]*weights3[2] + inputs[3]*weights3[3] +
+         inputs[4]*weights3[4] + inputs[5]*weights3[5] + inputs[6]*weights3[6] + inputs[7]*weights3[7] +
+         inputs[8]*weights3[8] + inputs[9]*weights3[9] + bias3),
+         (inputs[0]*weights4[0] + inputs[1]*weights4[1] + inputs[2]*weights4[2] + inputs[3]*weights4[3] +
+         inputs[4]*weights4[4] + inputs[5]*weights4[5] + inputs[6]*weights4[6] + inputs[7]*weights4[7] +
+         inputs[8]*weights4[8] + inputs[9]*weights4[9] + bias3),
+         (inputs[0]*weights5[0] + inputs[1]*weights5[1] + inputs[2]*weights5[2] + inputs[3]*weights5[3] +
+         inputs[4]*weights5[4] + inputs[5]*weights5[5] + inputs[6]*weights5[6] + inputs[7]*weights5[7] +
+         inputs[8]*weights5[8] + inputs[9]*weights5[9] + bias3),
+         (inputs[0]*weights6[0] + inputs[1]*weights6[1] + inputs[2]*weights6[2] + inputs[3]*weights6[3] +
+         inputs[4]*weights6[4] + inputs[5]*weights6[5] + inputs[6]*weights6[6] + inputs[7]*weights6[7] +
+         inputs[8]*weights6[8] + inputs[9]*weights6[9] + bias3),
+# Neuron 4 :
+   (inputs[0]*weights1[0] + inputs[1]*weights1[1] + inputs[2]*weights1[2] + inputs[3]*weights1[3] +
+         inputs[4]*weights1[4] + inputs[5]*weights1[5] + inputs[6]*weights1[6] + inputs[7]*weights1[7] +
+         inputs[8]*weights1[8] + inputs[9]*weights1[9] + bias4),
+         (inputs[0]*weights2[0] + inputs[1]*weights2[1] + inputs[2]*weights2[2] + inputs[3]*weights2[3] +
+         inputs[4]*weights2[4] + inputs[5]*weights2[5] + inputs[6]*weights2[6] + inputs[7]*weights2[7] +
+         inputs[8]*weights2[8] + inputs[9]*weights2[9] + bias4),
+         (inputs[0]*weights3[0] + inputs[1]*weights3[1] + inputs[2]*weights3[2] + inputs[3]*weights3[3] +
+         inputs[4]*weights3[4] + inputs[5]*weights3[5] + inputs[6]*weights3[6] + inputs[7]*weights3[7] +
+         inputs[8]*weights3[8] + inputs[9]*weights3[9] + bias4),
+         (inputs[0]*weights4[0] + inputs[1]*weights4[1] + inputs[2]*weights4[2] + inputs[3]*weights4[3] +
+         inputs[4]*weights4[4] + inputs[5]*weights4[5] + inputs[6]*weights4[6] + inputs[7]*weights4[7] +
+         inputs[8]*weights4[8] + inputs[9]*weights4[9] + bias4),
+         (inputs[0]*weights5[0] + inputs[1]*weights5[1] + inputs[2]*weights5[2] + inputs[3]*weights5[3] +
+         inputs[4]*weights5[4] + inputs[5]*weights5[5] + inputs[6]*weights5[6] + inputs[7]*weights5[7] +
+         inputs[8]*weights5[8] + inputs[9]*weights5[9] + bias4),
+         (inputs[0]*weights6[0] + inputs[1]*weights6[1] + inputs[2]*weights6[2] + inputs[3]*weights6[3] +
+         inputs[4]*weights6[4] + inputs[5]*weights6[5] + inputs[6]*weights6[6] + inputs[7]*weights6[7] +
+         inputs[8]*weights6[8] + inputs[9]*weights6[9] + bias4),
+# Neuron 5 :
+   (inputs[0]*weights1[0] + inputs[1]*weights1[1] + inputs[2]*weights1[2] + inputs[3]*weights1[3] +
+         inputs[4]*weights1[4] + inputs[5]*weights1[5] + inputs[6]*weights1[6] + inputs[7]*weights1[7] +
+         inputs[8]*weights1[8] + inputs[9]*weights1[9] + bias5),
+         (inputs[0]*weights2[0] + inputs[1]*weights2[1] + inputs[2]*weights2[2] + inputs[3]*weights2[3] +
+         inputs[4]*weights2[4] + inputs[5]*weights2[5] + inputs[6]*weights2[6] + inputs[7]*weights2[7] +
+         inputs[8]*weights2[8] + inputs[9]*weights2[9] + bias5),
+         (inputs[0]*weights3[0] + inputs[1]*weights3[1] + inputs[2]*weights3[2] + inputs[3]*weights3[3] +
+         inputs[4]*weights3[4] + inputs[5]*weights3[5] + inputs[6]*weights3[6] + inputs[7]*weights3[7] +
+         inputs[8]*weights3[8] + inputs[9]*weights3[9] + bias5),
+         (inputs[0]*weights4[0] + inputs[1]*weights4[1] + inputs[2]*weights4[2] + inputs[3]*weights4[3] +
+         inputs[4]*weights4[4] + inputs[5]*weights4[5] + inputs[6]*weights4[6] + inputs[7]*weights4[7] +
+         inputs[8]*weights4[8] + inputs[9]*weights4[9] + bias5),
+         (inputs[0]*weights5[0] + inputs[1]*weights5[1] + inputs[2]*weights5[2] + inputs[3]*weights5[3] +
+         inputs[4]*weights5[4] + inputs[5]*weights5[5] + inputs[6]*weights5[6] + inputs[7]*weights5[7] +
+         inputs[8]*weights5[8] + inputs[9]*weights5[9] + bias5),
+         (inputs[0]*weights6[0] + inputs[1]*weights6[1] + inputs[2]*weights6[2] + inputs[3]*weights6[3] +
+         inputs[4]*weights6[4] + inputs[5]*weights6[5] + inputs[6]*weights6[6] + inputs[7]*weights6[7] +
+         inputs[8]*weights6[8] + inputs[9]*weights6[9] + bias5)]
+print(outputs)
